@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand",
+    "test:coverage": "jest --runInBand --coverage",
+    "test:record": "node tests/helpers/capture-run.cjs",
+    "test:bdd": "node tests/bdd/run.cjs"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +18,9 @@
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "13.3.0",
+    "jest": "30.5.2"
   }
 }

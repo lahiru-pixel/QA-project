@@ -1,0 +1,3974 @@
+[
+  {
+    "description": "  Administrators can view and manage courses.\n  Other callers must not read the management catalogue or change courses.",
+    "elements": [
+      {
+        "description": "",
+        "id": "administrator-only-course-management;an-administrator-can-view-the-unpublished-course-catalogue",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "An administrator can view the unpublished course catalogue",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 18412400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 961400
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 205799
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 49883300
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I attempt to \"view\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 125800
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 169300
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the management catalogue should include the existing unpublished course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:52"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1489600
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcyIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICAgImJvZHkiOiBbCiAgICAgICAgICB7CiAgICAgICAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAgICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAgICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICAgICAgICB9CiAgICAgICAgXQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJjb3Vyc2VzIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-01",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;an-administrator-can-create-a-course",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "An administrator can create a course",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2009900
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 75100
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 61000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31100000
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I attempt to \"create\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 245400,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n500 !== 200\n\n    + expected - actual\n\n    -500\n    +200\n\n    at TutorialWorld.<anonymous> (D:\\projects\\tutorial-platform\\backend\\tests\\bdd\\steps\\tutorial.steps.cjs:31:72)"
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "the created course should be returned and saved in the isolated catalogue",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:56"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 588799
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAicGF0aCI6ICIvYXBpL2FkbWluL2NvdXJzZXMiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgY3JlYXRlZCBjb3Vyc2UiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJGaXh0dXJlIG9ubHkiLAogICAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZQogICAgICB9LAogICAgICAicmVzcG9uc2UiOiB7CiAgICAgICAgInN0YXR1cyI6IDUwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJlcnJvciI6ICJGYWlsZWQgdG8gY3JlYXRlIGNvdXJzZSIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0sCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDQiLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAyVDAwOjAwOjAwLjAwMFoiLAogICAgICAidGl0bGUiOiAiUUEgY3JlYXRlZCBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiRml4dHVyZSBvbmx5IiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJjb3Vyc2VzIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-02",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;an-administrator-can-edit-a-course",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "An administrator can edit a course",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1629500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 144499
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 54700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3991800
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I attempt to \"edit\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "failed",
+              "duration": 210000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n500 !== 200\n\n    + expected - actual\n\n    -500\n    +200\n\n    at TutorialWorld.<anonymous> (D:\\projects\\tutorial-platform\\backend\\tests\\bdd\\steps\\tutorial.steps.cjs:31:72)"
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the existing course should have the requested title",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:65"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1170799
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBVVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgdXBkYXRlZCBjb3Vyc2UiCiAgICAgIH0sCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNTAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIkZhaWxlZCB0byB1cGRhdGUgY291cnNlIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIHVwZGF0ZWQgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJjb3Vyc2VzIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-03",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;an-administrator-can-delete-a-course",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "An administrator can delete a course",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1409800
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 54399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 57299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3875499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I attempt to \"delete\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 66399
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 119500
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "the existing course should be removed from the isolated catalogue",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:71"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 551699
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkRFTEVURSIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IG51bGwsCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogMjAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgInN1Y2Nlc3MiOiB0cnVlCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJjb3Vyc2VzIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-04",
+            "line": 30
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-guest-cannot-view-courses",
+        "keyword": "Scenario Outline",
+        "line": 48,
+        "name": "A guest cannot view courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1028900
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 44999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 46600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"guest\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3085699
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"view\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 86500
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 260400
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Missing or invalid authorization header\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 113100
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 78300
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 742100
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcyIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDEsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiTWlzc2luZyBvciBpbnZhbGlkIGF1dGhvcml6YXRpb24gaGVhZGVyIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogW10KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-GUEST",
+            "line": 45
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-guest-cannot-create-courses",
+        "keyword": "Scenario Outline",
+        "line": 49,
+        "name": "A guest cannot create courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1041399
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 43200
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28900
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"guest\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3324200
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"create\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 55100
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 48499
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Missing or invalid authorization header\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 49299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 15300
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 586999
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAicGF0aCI6ICIvYXBpL2FkbWluL2NvdXJzZXMiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgY3JlYXRlZCBjb3Vyc2UiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJGaXh0dXJlIG9ubHkiLAogICAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZQogICAgICB9LAogICAgICAicmVzcG9uc2UiOiB7CiAgICAgICAgInN0YXR1cyI6IDQwMSwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJlcnJvciI6ICJNaXNzaW5nIG9yIGludmFsaWQgYXV0aG9yaXphdGlvbiBoZWFkZXIiCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-GUEST",
+            "line": 45
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-guest-cannot-edit-courses",
+        "keyword": "Scenario Outline",
+        "line": 50,
+        "name": "A guest cannot edit courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1556500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 61800
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 50700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"guest\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3672199
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"edit\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 87499
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 49800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Missing or invalid authorization header\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 30700
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 641599
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBVVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgdXBkYXRlZCBjb3Vyc2UiCiAgICAgIH0sCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNDAxLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIk1pc3Npbmcgb3IgaW52YWxpZCBhdXRob3JpemF0aW9uIGhlYWRlciIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJyZXBvc2l0b3J5UXVlcmllcyI6IFtdCn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-GUEST",
+            "line": 45
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-guest-cannot-delete-courses",
+        "keyword": "Scenario Outline",
+        "line": 51,
+        "name": "A guest cannot delete courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1042000
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 42000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 29999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"guest\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2450600
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"delete\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 40799
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Missing or invalid authorization header\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 22199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 18800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 647899
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkRFTEVURSIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IG51bGwsCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNDAxLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIk1pc3Npbmcgb3IgaW52YWxpZCBhdXRob3JpemF0aW9uIGhlYWRlciIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJyZXBvc2l0b3J5UXVlcmllcyI6IFtdCn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-GUEST",
+            "line": 45
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-student-cannot-view-courses",
+        "keyword": "Scenario Outline",
+        "line": 56,
+        "name": "A student cannot view courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1260299
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 83399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 56000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6358600
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"view\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 95599
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 58400
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Forbidden: Admin access required\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35300
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 134999
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 645099
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcyIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDMsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiRm9yYmlkZGVuOiBBZG1pbiBhY2Nlc3MgcmVxdWlyZWQiCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0KICBdCn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-STUDENT",
+            "line": 53
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-student-cannot-create-courses",
+        "keyword": "Scenario Outline",
+        "line": 57,
+        "name": "A student cannot create courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 979699
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 77100
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 67900
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4115299
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"create\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 43999
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Forbidden: Admin access required\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 22800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 13799
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 424599
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAicGF0aCI6ICIvYXBpL2FkbWluL2NvdXJzZXMiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgY3JlYXRlZCBjb3Vyc2UiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJGaXh0dXJlIG9ubHkiLAogICAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZQogICAgICB9LAogICAgICAicmVzcG9uc2UiOiB7CiAgICAgICAgInN0YXR1cyI6IDQwMywKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJlcnJvciI6ICJGb3JiaWRkZW46IEFkbWluIGFjY2VzcyByZXF1aXJlZCIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJyZXBvc2l0b3J5UXVlcmllcyI6IFsKICAgIHsKICAgICAgInRhYmxlIjogInByb2ZpbGVzIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-STUDENT",
+            "line": 53
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-student-cannot-edit-courses",
+        "keyword": "Scenario Outline",
+        "line": 58,
+        "name": "A student cannot edit courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 879000
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32699
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2492300
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"edit\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 54899
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 37000
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Forbidden: Admin access required\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 40500
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20100
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 432700
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBVVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgdXBkYXRlZCBjb3Vyc2UiCiAgICAgIH0sCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNDAzLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIkZvcmJpZGRlbjogQWRtaW4gYWNjZXNzIHJlcXVpcmVkIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogWwogICAgewogICAgICAidGFibGUiOiAicHJvZmlsZXMiCiAgICB9CiAgXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-STUDENT",
+            "line": 53
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-student-cannot-delete-courses",
+        "keyword": "Scenario Outline",
+        "line": 59,
+        "name": "A student cannot delete courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 991199
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 55399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 27299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2085500
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"delete\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 40899
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Forbidden: Admin access required\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 22100
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 13900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 307599
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkRFTEVURSIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IG51bGwsCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNDAzLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIkZvcmJpZGRlbjogQWRtaW4gYWNjZXNzIHJlcXVpcmVkIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogWwogICAgewogICAgICAidGFibGUiOiAicHJvZmlsZXMiCiAgICB9CiAgXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-STUDENT",
+            "line": 53
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-invalid-identity-cannot-view-courses",
+        "keyword": "Scenario Outline",
+        "line": 64,
+        "name": "A invalid identity cannot view courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 763500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 45600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 34400
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"invalid identity\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2041600
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"view\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 44900
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 54300
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Unauthorized: Invalid token\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 14699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 376300
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcyIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDEsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiVW5hdXRob3JpemVkOiBJbnZhbGlkIHRva2VuIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogW10KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-INVALID",
+            "line": 61
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-invalid-identity-cannot-create-courses",
+        "keyword": "Scenario Outline",
+        "line": 65,
+        "name": "A invalid identity cannot create courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 815899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35300
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 26100
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"invalid identity\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2220400
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"create\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 52700
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 38400
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Unauthorized: Invalid token\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 23599
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 15200
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 350199
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAicGF0aCI6ICIvYXBpL2FkbWluL2NvdXJzZXMiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgY3JlYXRlZCBjb3Vyc2UiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJGaXh0dXJlIG9ubHkiLAogICAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZQogICAgICB9LAogICAgICAicmVzcG9uc2UiOiB7CiAgICAgICAgInN0YXR1cyI6IDQwMSwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJlcnJvciI6ICJVbmF1dGhvcml6ZWQ6IEludmFsaWQgdG9rZW4iCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-INVALID",
+            "line": 61
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-invalid-identity-cannot-edit-courses",
+        "keyword": "Scenario Outline",
+        "line": 66,
+        "name": "A invalid identity cannot edit courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1255099
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 71699
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 37400
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"invalid identity\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2506699
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"edit\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 42900
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Unauthorized: Invalid token\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 13199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 316800
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBVVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgdXBkYXRlZCBjb3Vyc2UiCiAgICAgIH0sCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNDAxLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIlVuYXV0aG9yaXplZDogSW52YWxpZCB0b2tlbiIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJyZXBvc2l0b3J5UXVlcmllcyI6IFtdCn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-INVALID",
+            "line": 61
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-invalid-identity-cannot-delete-courses",
+        "keyword": "Scenario Outline",
+        "line": 67,
+        "name": "A invalid identity cannot delete courses",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 833399
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 36400
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 55499
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 38,
+            "name": "I am a \"invalid identity\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1983100
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "I attempt to \"delete\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 77200
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47000
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the response error should be \"Unauthorized: Invalid token\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 22900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 12499
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "no course management query should reach the repository",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:78"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 367200
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkRFTEVURSIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IG51bGwsCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNDAxLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIlVuYXV0aG9yaXplZDogSW52YWxpZCB0b2tlbiIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJyZXBvc2l0b3J5UXVlcmllcyI6IFtdCn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-INVALID",
+            "line": 61
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-repository-failure-does-not-report-a-successful-view",
+        "keyword": "Scenario Outline",
+        "line": 80,
+        "name": "A repository failure does not report a successful view",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 861899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33500
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 27199
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 82700
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "the course repository will fail the \"view\" operation",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1790399
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 73,
+            "name": "I attempt to \"view\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 38300
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 74,
+            "name": "the response status should be 500",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 68699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "the response error should be \"Failed to fetch courses\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 387699
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcyIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA1MDAsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiRmFpbGVkIHRvIGZldGNoIGNvdXJzZXMiCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJjb3Vyc2VzIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-FAILURE",
+            "line": 69
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-repository-failure-does-not-report-a-successful-create",
+        "keyword": "Scenario Outline",
+        "line": 81,
+        "name": "A repository failure does not report a successful create",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1056800
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 71399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 40399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47799
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "the course repository will fail the \"create\" operation",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 3762600
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 73,
+            "name": "I attempt to \"create\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 45600
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 74,
+            "name": "the response status should be 500",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "the response error should be \"Failed to create course\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 344500
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBPU1QiLAogICAgICAicGF0aCI6ICIvYXBpL2FkbWluL2NvdXJzZXMiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgY3JlYXRlZCBjb3Vyc2UiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJGaXh0dXJlIG9ubHkiLAogICAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZQogICAgICB9LAogICAgICAicmVzcG9uc2UiOiB7CiAgICAgICAgInN0YXR1cyI6IDUwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJlcnJvciI6ICJGYWlsZWQgdG8gY3JlYXRlIGNvdXJzZSIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJyZXBvc2l0b3J5UXVlcmllcyI6IFsKICAgIHsKICAgICAgInRhYmxlIjogInByb2ZpbGVzIgogICAgfSwKICAgIHsKICAgICAgInRhYmxlIjogImNvdXJzZXMiCiAgICB9CiAgXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-FAILURE",
+            "line": 69
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-repository-failure-does-not-report-a-successful-edit",
+        "keyword": "Scenario Outline",
+        "line": 82,
+        "name": "A repository failure does not report a successful edit",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 746200
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 29999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 30399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 25800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "the course repository will fail the \"edit\" operation",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2571299
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 73,
+            "name": "I attempt to \"edit\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 46399
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 74,
+            "name": "the response status should be 500",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35200
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "the response error should be \"Failed to update course\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20700
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 328499
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIlBVVCIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IHsKICAgICAgICAidGl0bGUiOiAiUUEgdXBkYXRlZCBjb3Vyc2UiCiAgICAgIH0sCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNTAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIkZhaWxlZCB0byB1cGRhdGUgY291cnNlIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogWwogICAgewogICAgICAidGFibGUiOiAicHJvZmlsZXMiCiAgICB9LAogICAgewogICAgICAidGFibGUiOiAiY291cnNlcyIKICAgIH0KICBdCn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-FAILURE",
+            "line": 69
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "administrator-only-course-management;a-repository-failure-does-not-report-a-successful-delete",
+        "keyword": "Scenario Outline",
+        "line": 83,
+        "name": "A repository failure does not report a successful delete",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 818999
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 25099
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "the course repository will fail the \"delete\" operation",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:40"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1817999
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 73,
+            "name": "I attempt to \"delete\" a course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:44"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 74,
+            "name": "the response status should be 500",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "the response error should be \"Failed to delete course\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 24199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 76,
+            "name": "the course catalogue should match its initial state",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:75"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 308699
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkRFTEVURSIsCiAgICAgICJwYXRoIjogIi9hcGkvYWRtaW4vY291cnNlcy8wMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAiYm9keSI6IG51bGwsCiAgICAgICJyZXNwb25zZSI6IHsKICAgICAgICAic3RhdHVzIjogNTAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIkZhaWxlZCB0byBkZWxldGUgY291cnNlIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogWwogICAgewogICAgICAidGFibGUiOiAicHJvZmlsZXMiCiAgICB9LAogICAgewogICAgICAidGFibGUiOiAiY291cnNlcyIKICAgIH0KICBdCn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin-courses",
+            "line": 1
+          },
+          {
+            "name": "@BDD-ADM-FAILURE",
+            "line": 69
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "administrator-only-course-management",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Administrator-only course management",
+    "tags": [
+      {
+        "name": "@admin-courses",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\bdd\\features\\admin-course-management.feature"
+  },
+  {
+    "description": "  Students may receive a video link only when authenticated, paid and enrolled\n  in the video's course. Administrators may preview videos without enrollment.",
+    "elements": [
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;a-guest-cannot-obtain-a-video-link",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "A guest cannot obtain a video link",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 777000
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35999
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I am a \"guest\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2573499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 53400
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the response error should be \"Missing or invalid authorization header\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 81000
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the private video link should not be disclosed",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 391300
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDEsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiTWlzc2luZyBvciBpbnZhbGlkIGF1dGhvcml6YXRpb24gaGVhZGVyIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogW10KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-01",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;an-invalid-identity-cannot-obtain-a-video-link",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "An invalid identity cannot obtain a video link",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 965899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33200
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 40499
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I am an \"invalid identity\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2091700
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47300
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the response status should be 401",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the response error should be \"Unauthorized: Invalid token\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 18400
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the private video link should not be disclosed",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 377299
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDEsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiVW5hdXRob3JpemVkOiBJbnZhbGlkIHRva2VuIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogW10KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-02",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;a-paid-enrolled-student-can-access-the-video",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "A paid enrolled student can access the video",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 840199
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 38199
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 84699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "my payment status is \"paid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 54599
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I am enrolled in the video's course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2109900
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 36100
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 66799
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I should receive only the permitted video details",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:37"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 326199
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAxIiwKICAgICAgICAgICJ0aXRsZSI6ICJRQSBzeW50aGV0aWMgbGVzc29uIiwKICAgICAgICAgICJ5b3V0dWJlX3VybCI6ICJodHRwczovL3lvdXR1LmJlL2FiY2RlZmdoaWprIiwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJGaXh0dXJlIG9ubHkiCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJ2aWRlb3MiCiAgICB9LAogICAgewogICAgICAidGFibGUiOiAiZW5yb2xsbWVudHMiCiAgICB9LAogICAgewogICAgICAidGFibGUiOiAidmlkZW9zIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-03",
+            "line": 25
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;an-unpaid-student-is-denied-even-when-enrollment-is-present",
+        "keyword": "Scenario Outline",
+        "line": 46,
+        "name": "An unpaid student is denied even when enrollment is present",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 813999
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 41000
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "my payment status is \"unpaid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 86599
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "my enrollment in the video's course is \"present\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 4448999
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 43900
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 30799
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "the response error should be \"Forbidden: User has not paid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 18100
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the private video link should not be disclosed",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 348200
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDMsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiRm9yYmlkZGVuOiBVc2VyIGhhcyBub3QgcGFpZCIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJyZXBvc2l0b3J5UXVlcmllcyI6IFsKICAgIHsKICAgICAgInRhYmxlIjogInByb2ZpbGVzIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-04",
+            "line": 43
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;an-unpaid-student-is-denied-even-when-enrollment-is-absent",
+        "keyword": "Scenario Outline",
+        "line": 51,
+        "name": "An unpaid student is denied even when enrollment is absent",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 775099
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 30700
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 27100
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 23699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "my payment status is \"unpaid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "my enrollment in the video's course is \"absent\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 2198599
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 56900
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 71100
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "the response error should be \"Forbidden: User has not paid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28599
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the private video link should not be disclosed",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 355600
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDMsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiRm9yYmlkZGVuOiBVc2VyIGhhcyBub3QgcGFpZCIKICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb3Vyc2VzQmVmb3JlIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgImNvdXJzZXNBZnRlciI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJyZXBvc2l0b3J5UXVlcmllcyI6IFsKICAgIHsKICAgICAgInRhYmxlIjogInByb2ZpbGVzIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-05",
+            "line": 48
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;payment-alone-does-not-grant-course-access",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "Payment alone does not grant course access",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 759700
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32299
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 30399
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 35999
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "my payment status is \"paid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20399
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "my enrollment in the video's course is \"absent\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1817099
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 58,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 31299
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 25899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "the response error should be \"Forbidden: Not enrolled in this course\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 15699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "the private video link should not be disclosed",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 322399
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDMsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiRm9yYmlkZGVuOiBOb3QgZW5yb2xsZWQgaW4gdGhpcyBjb3Vyc2UiCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJ2aWRlb3MiCiAgICB9LAogICAgewogICAgICAidGFibGUiOiAiZW5yb2xsbWVudHMiCiAgICB9CiAgXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-06",
+            "line": 53
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;an-enrollment-for-another-course-does-not-grant-this-access",
+        "keyword": "Scenario Outline",
+        "line": 75,
+        "name": "An enrollment for another course does not grant this access",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 810500
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32600
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 27799
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 24600
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "my payment status is \"paid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 128299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "the only enrollment belongs to \"another course\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:24"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1950900
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 67,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 33999
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 68,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 28299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "the response error should be \"Forbidden: Not enrolled in this course\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 29199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "the private video link should not be disclosed",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 338899
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDMsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiRm9yYmlkZGVuOiBOb3QgZW5yb2xsZWQgaW4gdGhpcyBjb3Vyc2UiCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJ2aWRlb3MiCiAgICB9LAogICAgewogICAgICAidGFibGUiOiAiZW5yb2xsbWVudHMiCiAgICB9CiAgXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-07",
+            "line": 72
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;an-enrollment-for-another-student-does-not-grant-this-access",
+        "keyword": "Scenario Outline",
+        "line": 80,
+        "name": "An enrollment for another student does not grant this access",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 725800
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 29499
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 23099
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 64,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 21200
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "my payment status is \"paid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 23199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "the only enrollment belongs to \"another student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:24"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1593799
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 67,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 34600
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 68,
+            "name": "the response status should be 403",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 38899
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "the response error should be \"Forbidden: Not enrolled in this course\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "the private video link should not be disclosed",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 307900
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDMsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiRm9yYmlkZGVuOiBOb3QgZW5yb2xsZWQgaW4gdGhpcyBjb3Vyc2UiCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJ2aWRlb3MiCiAgICB9LAogICAgewogICAgICAidGFibGUiOiAiZW5yb2xsbWVudHMiCiAgICB9CiAgXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-08",
+            "line": 77
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;an-administrator-may-preview-without-payment-or-enrollment",
+        "keyword": "Scenario",
+        "line": 83,
+        "name": "An administrator may preview without payment or enrollment",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 793400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 30899
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 24799
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 84,
+            "name": "I am an \"admin\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20999
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "my payment status is \"unpaid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20700
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 86,
+            "name": "my enrollment in the video's course is \"absent\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:20"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1788499
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 87,
+            "name": "I request the course video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 45700
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 88,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 23900
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 89,
+            "name": "I should receive only the permitted video details",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:37"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 288099
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAxIiwKICAgICAgICAgICJ0aXRsZSI6ICJRQSBzeW50aGV0aWMgbGVzc29uIiwKICAgICAgICAgICJ5b3V0dWJlX3VybCI6ICJodHRwczovL3lvdXR1LmJlL2FiY2RlZmdoaWprIiwKICAgICAgICAgICJkZXNjcmlwdGlvbiI6ICJGaXh0dXJlIG9ubHkiCiAgICAgICAgfQogICAgICB9CiAgICB9CiAgXSwKICAiY291cnNlc0JlZm9yZSI6IFsKICAgIHsKICAgICAgImlkIjogIjAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDAwMiIsCiAgICAgICJ0aXRsZSI6ICJRQSBleGlzdGluZyBjb3Vyc2UiLAogICAgICAiZGVzY3JpcHRpb24iOiAiU3ludGhldGljIGZpeHR1cmUiLAogICAgICAiaXNfcHVibGlzaGVkIjogZmFsc2UsCiAgICAgICJjcmVhdGVkX2F0IjogIjIwMjYtMDEtMDFUMDA6MDA6MDAuMDAwWiIKICAgIH0KICBdLAogICJjb3Vyc2VzQWZ0ZXIiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAicmVwb3NpdG9yeVF1ZXJpZXMiOiBbCiAgICB7CiAgICAgICJ0YWJsZSI6ICJwcm9maWxlcyIKICAgIH0sCiAgICB7CiAgICAgICJ0YWJsZSI6ICJ2aWRlb3MiCiAgICB9CiAgXQp9",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-09",
+            "line": 82
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-access-to-a-course-video;a-paid-student-receives-a-clear-error-for-a-missing-video",
+        "keyword": "Scenario",
+        "line": 92,
+        "name": "A paid student receives a clear error for a missing video",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 699899
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 60799
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "an isolated tutorial platform with an existing course and video",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 32000
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 93,
+            "name": "I am a \"student\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:10"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 22999
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 94,
+            "name": "my payment status is \"paid\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:15"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 14699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "I am enrolled in the video's course",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:19"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1759599
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 96,
+            "name": "I request a video that does not exist",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:30"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 36899
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 97,
+            "name": "the response status should be 404",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:31"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 27299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "the response error should be \"Video not found\"",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:32"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 16700
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 99,
+            "name": "the private video link should not be disclosed",
+            "match": {
+              "location": "tests\\bdd\\steps\\tutorial.steps.cjs:33"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 372499
+            },
+            "keyword": "After",
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ewogICJzY29wZSI6ICJSZWFsIEV4cHJlc3Mgcm91dGVycyBhbmQgbWlkZGxld2FyZTsgc3ludGhldGljIGluLW1lbW9yeSBTdXBhYmFzZSIsCiAgInJlcXVlc3RzIjogWwogICAgewogICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICJwYXRoIjogIi9hcGkvdmlkZW9zLzAwMDAwMDAwLTAwMDAtNDAwMC04MDAwLTAwMDAwMDAwMDA5OS93YXRjaCIsCiAgICAgICJib2R5IjogbnVsbCwKICAgICAgInJlc3BvbnNlIjogewogICAgICAgICJzdGF0dXMiOiA0MDQsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiVmlkZW8gbm90IGZvdW5kIgogICAgICAgIH0KICAgICAgfQogICAgfQogIF0sCiAgImNvdXJzZXNCZWZvcmUiOiBbCiAgICB7CiAgICAgICJpZCI6ICIwMDAwMDAwMC0wMDAwLTQwMDAtODAwMC0wMDAwMDAwMDAwMDIiLAogICAgICAidGl0bGUiOiAiUUEgZXhpc3RpbmcgY291cnNlIiwKICAgICAgImRlc2NyaXB0aW9uIjogIlN5bnRoZXRpYyBmaXh0dXJlIiwKICAgICAgImlzX3B1Ymxpc2hlZCI6IGZhbHNlLAogICAgICAiY3JlYXRlZF9hdCI6ICIyMDI2LTAxLTAxVDAwOjAwOjAwLjAwMFoiCiAgICB9CiAgXSwKICAiY291cnNlc0FmdGVyIjogWwogICAgewogICAgICAiaWQiOiAiMDAwMDAwMDAtMDAwMC00MDAwLTgwMDAtMDAwMDAwMDAwMDAyIiwKICAgICAgInRpdGxlIjogIlFBIGV4aXN0aW5nIGNvdXJzZSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJTeW50aGV0aWMgZml4dHVyZSIsCiAgICAgICJpc19wdWJsaXNoZWQiOiBmYWxzZSwKICAgICAgImNyZWF0ZWRfYXQiOiAiMjAyNi0wMS0wMVQwMDowMDowMC4wMDBaIgogICAgfQogIF0sCiAgInJlcG9zaXRvcnlRdWVyaWVzIjogWwogICAgewogICAgICAidGFibGUiOiAicHJvZmlsZXMiCiAgICB9LAogICAgewogICAgICAidGFibGUiOiAidmlkZW9zIgogICAgfQogIF0KfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@video-access",
+            "line": 1
+          },
+          {
+            "name": "@BDD-VID-10",
+            "line": 91
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "student-access-to-a-course-video",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Student access to a course video",
+    "tags": [
+      {
+        "name": "@video-access",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\bdd\\features\\student-video-access.feature"
+  }
+]

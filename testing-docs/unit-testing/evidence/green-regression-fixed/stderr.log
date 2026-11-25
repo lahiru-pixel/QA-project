@@ -1,0 +1,7 @@
+
+Test Suites: 7 passed, 7 total
+Tests:       60 passed, 60 total
+Snapshots:   0 total
+Time:        0.776 s, estimated 6 s
+Ran all test suites.
+Test results written to: ..\testing-docs\unit-testing\evidence\green-regression-fixed\jest-results.json

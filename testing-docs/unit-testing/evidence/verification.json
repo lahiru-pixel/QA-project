@@ -1,0 +1,306 @@
+{
+  "verifiedAt": "2026-11-25T12:56:20.775Z",
+  "runs": [
+    {
+      "stage": "red",
+      "start": "2026-11-25T12:51:35.073Z",
+      "end": "2026-11-25T12:51:36.185Z",
+      "exit": 1,
+      "tests": 2,
+      "passed": 0,
+      "failed": 2,
+      "pending": 0,
+      "suites": 1,
+      "testSnapshotHash": "0946793b80c0a37ea58c2e33b7498b3e7062981591fda6ef0a84fbe9780b2093"
+    },
+    {
+      "stage": "green",
+      "start": "2026-11-25T12:51:53.891Z",
+      "end": "2026-11-25T12:51:54.993Z",
+      "exit": 0,
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "pending": 0,
+      "suites": 1,
+      "testSnapshotHash": "0946793b80c0a37ea58c2e33b7498b3e7062981591fda6ef0a84fbe9780b2093"
+    },
+    {
+      "stage": "green-regression",
+      "start": "2026-11-25T12:54:09.252Z",
+      "end": "2026-11-25T12:54:15.946Z",
+      "exit": 1,
+      "tests": 60,
+      "passed": 59,
+      "failed": 1,
+      "pending": 0,
+      "suites": 7,
+      "testSnapshotHash": "0946793b80c0a37ea58c2e33b7498b3e7062981591fda6ef0a84fbe9780b2093"
+    },
+    {
+      "stage": "green-regression-fixed",
+      "start": "2026-11-25T12:54:37.246Z",
+      "end": "2026-11-25T12:54:38.568Z",
+      "exit": 0,
+      "tests": 60,
+      "passed": 60,
+      "failed": 0,
+      "pending": 0,
+      "suites": 7,
+      "testSnapshotHash": "0946793b80c0a37ea58c2e33b7498b3e7062981591fda6ef0a84fbe9780b2093"
+    },
+    {
+      "stage": "refactor",
+      "start": "2026-11-25T12:54:55.462Z",
+      "end": "2026-11-25T12:54:56.965Z",
+      "exit": 0,
+      "tests": 60,
+      "passed": 60,
+      "failed": 0,
+      "pending": 0,
+      "suites": 7,
+      "testSnapshotHash": "0946793b80c0a37ea58c2e33b7498b3e7062981591fda6ef0a84fbe9780b2093"
+    },
+    {
+      "stage": "final-coverage",
+      "start": "2026-11-25T12:54:57.391Z",
+      "end": "2026-11-25T12:54:59.093Z",
+      "exit": 0,
+      "tests": 60,
+      "passed": 60,
+      "failed": 0,
+      "pending": 0,
+      "suites": 7,
+      "testSnapshotHash": "0946793b80c0a37ea58c2e33b7498b3e7062981591fda6ef0a84fbe9780b2093"
+    }
+  ],
+  "coverage": [
+    {
+      "file": "total",
+      "lines": {
+        "total": 197,
+        "covered": 85,
+        "skipped": 0,
+        "pct": 43.14
+      },
+      "statements": {
+        "total": 215,
+        "covered": 90,
+        "skipped": 0,
+        "pct": 41.86
+      },
+      "functions": {
+        "total": 23,
+        "covered": 8,
+        "skipped": 0,
+        "pct": 34.78
+      },
+      "branches": {
+        "total": 91,
+        "covered": 51,
+        "skipped": 0,
+        "pct": 56.04
+      },
+      "branchesTrue": {
+        "total": 0,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    {
+      "file": "backend/middleware/authenticate.js",
+      "lines": {
+        "total": 19,
+        "covered": 19,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 1,
+        "covered": 1,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 19,
+        "covered": 19,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 12,
+        "covered": 12,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    {
+      "file": "backend/middleware/isAdmin.js",
+      "lines": {
+        "total": 5,
+        "covered": 5,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 1,
+        "covered": 1,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 5,
+        "covered": 5,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 4,
+        "covered": 4,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    {
+      "file": "backend/middleware/isEnrolled.js",
+      "lines": {
+        "total": 26,
+        "covered": 26,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 1,
+        "covered": 1,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 26,
+        "covered": 26,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 25,
+        "covered": 25,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    {
+      "file": "backend/routes/admin.js",
+      "lines": {
+        "total": 98,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 0
+      },
+      "functions": {
+        "total": 14,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 0
+      },
+      "statements": {
+        "total": 111,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 0
+      },
+      "branches": {
+        "total": 36,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 0
+      }
+    },
+    {
+      "file": "backend/routes/courses.js",
+      "lines": {
+        "total": 21,
+        "covered": 21,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 2,
+        "covered": 2,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 23,
+        "covered": 23,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 8,
+        "covered": 8,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    {
+      "file": "backend/routes/students.js",
+      "lines": {
+        "total": 14,
+        "covered": 14,
+        "skipped": 0,
+        "pct": 100
+      },
+      "functions": {
+        "total": 3,
+        "covered": 3,
+        "skipped": 0,
+        "pct": 100
+      },
+      "statements": {
+        "total": 17,
+        "covered": 17,
+        "skipped": 0,
+        "pct": 100
+      },
+      "branches": {
+        "total": 2,
+        "covered": 2,
+        "skipped": 0,
+        "pct": 100
+      }
+    },
+    {
+      "file": "backend/routes/videos.js",
+      "lines": {
+        "total": 14,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 0
+      },
+      "functions": {
+        "total": 1,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 0
+      },
+      "statements": {
+        "total": 14,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 0
+      },
+      "branches": {
+        "total": 4,
+        "covered": 0,
+        "skipped": 0,
+        "pct": 0
+      }
+    }
+  ],
+  "allFinalInputsMatchRecordedHashes": true,
+  "unchangedTddTestAcrossStages": true,
+  "whiteBoxDesignIdsExecuted": 38,
+  "whiteBoxDesignSuperseded": "WB-AUT-11; replaced by two TDD cases expecting 401",
+  "countsIncludeFiveHarnessTests": true
+}

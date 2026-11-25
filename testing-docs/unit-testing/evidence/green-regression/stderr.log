@@ -1,0 +1,31 @@
+FAIL tests/unit/course-handlers.test.cjs (5.215 s)
+  ● COURSE-01 list returns mocked dataset %j
+
+    thrown: "Exceeded timeout of 5000 ms for a test while waiting for `done()` to be called.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      at _getError (node_modules/jest-circus/build/jestAdapterInit.js:1985:12)
+          at Array.map (<anonymous>)
+
+    Cause:
+        thrown: "Exceeded timeout of 5000 ms for a test while waiting for `done()` to be called.
+        Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+           6 | const list = handler('/'), details = handler('/:id');
+           7 |
+        >  8 | test.each([[], [{ id: C, title: 'QA course' }]])('COURSE-01 list returns mocked dataset %j', async data => {
+             |                                                 ^
+           9 |   const ctx = context(), q = query({ data, error: null });
+          10 |   supabase.from.mockReturnValue(q);
+          11 |   await list(ctx.req, ctx.res, ctx.next);
+
+          at eachBind (node_modules/jest-each/build/index.js:54:13)
+          at Object.<anonymous> (tests/unit/course-handlers.test.cjs:8:49)
+
+
+Test Suites: 1 failed, 6 passed, 7 total
+Tests:       1 failed, 59 passed, 60 total
+Snapshots:   0 total
+Time:        6.051 s
+Ran all test suites.
+Test results written to: ..\testing-docs\unit-testing\evidence\green-regression\jest-results.json

@@ -1,0 +1,7 @@
+
+Test Suites: 7 passed, 7 total
+Tests:       60 passed, 60 total
+Snapshots:   0 total
+Time:        1.218 s
+Ran all test suites.
+Test results written to: ..\testing-docs\unit-testing\evidence\final-coverage\jest-results.json

@@ -1,0 +1,40 @@
+{
+  "startedAt": "2026-11-25T12:54:55.462Z",
+  "finishedAt": "2026-11-25T12:54:56.965Z",
+  "cwd": "D:\\projects\\tutorial-platform\\backend",
+  "command": [
+    "npm",
+    "test",
+    "--",
+    "--json",
+    "--outputFile=D:\\projects\\tutorial-platform\\testing-docs\\unit-testing\\evidence\\refactor\\jest-results.json"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "launchError": null,
+  "node": "v24.14.1",
+  "jest": "30.5.2",
+  "sourceHashesBefore": {
+    "backend/middleware/authenticate.js": "b50f2f8e686329583ebb7d02c74529d54a2a484165154b940a7e5d49ec8cf401",
+    "backend/middleware/isAdmin.js": "abcfb7c5e85fd7ccae1f6cffa857142e8f8a89cccf37b624cadc85699f80cf77",
+    "backend/middleware/isEnrolled.js": "3fe66a607a37a7a86d2ed8d33bfe2d632eb8331a9a9aa38141d41c0a91a68f98",
+    "backend/routes/admin.js": "581e64cafcb0b99739abdb7bba2fd00d88032d4be6b7b713c25205ed8aba4ba7",
+    "backend/routes/courses.js": "d0f5d4f27a565dc07c3e2e181d3caa5cdf1a791a24618ad0e1ca7a16e216d0b8",
+    "backend/routes/students.js": "f04ef389d5abd60e2e0e484121e1bb0da1ea3d3124abea8d444861c2defd4628",
+    "backend/routes/videos.js": "f6e797abd23a65c32e6c1a6a3d8fcbe2360a45182a41394b2736af4c3529e34f",
+    "backend/tests/helpers/capture-run.cjs": "b63a1fbec60d6cb943c53d7f4c2571d8fe306b2fb3599206d0406e889f5b29ca",
+    "backend/tests/helpers/fixtures.cjs": "53240adc32f5f8e3c9c6a2d808416f8604a5563eb8c2c0731c0cbd1803a355b0",
+    "backend/tests/setup.cjs": "42da7a22fbfb437fad1a1a0a3fa1bb36ecf595534fe06e91a201a116747e9d0e",
+    "backend/tests/unit/authenticate-null-user.test.cjs": "0946793b80c0a37ea58c2e33b7498b3e7062981591fda6ef0a84fbe9780b2093",
+    "backend/tests/unit/authenticate.test.cjs": "f9ea3e1d7c3e09b868b84f79f84fb3e461c2a0db1a0639bd1bd355f486a12fec",
+    "backend/tests/unit/course-handlers.test.cjs": "d96bcb7e1e5a70adbaa3583b34f707aa58ccce52d84ecef4015b011f4b0ffb13",
+    "backend/tests/unit/isAdmin.test.cjs": "2584fe8acb2cd7b6fc5a12d83e6c6e969ee5f1e227b8ff05a53138545bc62702",
+    "backend/tests/unit/isEnrolled.test.cjs": "92e9c2a13adf7b4ce5db024556aaa54151335f7dfafdb0e3aa8808d0883ff6dc",
+    "backend/tests/unit/isolation.test.cjs": "064fd1f9ef954b4a6e58042f77067cb8f5705d92a24d777561344d1c50d603ab",
+    "backend/tests/unit/student-handler.test.cjs": "6893001ddf01afe61f3b14b3742fd0dfc83c7edff541a12aa0ded550627dd1c1",
+    "backend/jest.config.cjs": "b1b0ba96eb28c36af199ffcf78e2b324e42609c88217a5f3db07884dd6831e74",
+    "backend/package.json": "a5bae3558bc4b154b7d49cbca6f7fe75905a4b29f0bc30bc137421aac65eed1d",
+    "backend/package-lock.json": "29d70d577aab02be2462d3b7902a523663f0328f8db497aa8aec0555dd3bd54c"
+  },
+  "inputsUnchangedDuringRun": true
+}

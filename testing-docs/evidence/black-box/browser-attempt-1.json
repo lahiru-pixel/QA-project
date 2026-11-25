@@ -1,0 +1,352 @@
+{
+  "startedAt": "2026-11-25T12:05:38.013Z",
+  "finishedAt": "2026-11-25T12:06:48.181Z",
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.147.0 Chrome/150.0.7871.250 Electron/43.8.9 Safari/537.36",
+    "language": "en-US"
+  },
+  "scope": "Real React components in local Vite wrapper; AuthContext/API/Supabase dependencies stubbed; CSP blocks remote frames; no real signup or persistence",
+  "blockedRequestOrigins": [],
+  "results": [
+    {
+      "id": "EP-EMAIL-01",
+      "description": "Empty required registration email",
+      "input": "",
+      "expected": {
+        "valid": false
+      },
+      "actual": {
+        "executionError": "page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5178/register\", waiting until \"load\"\u001b[22m\n"
+      },
+      "status": "Not Run"
+    },
+    {
+      "id": "EP-EMAIL-02",
+      "description": "Malformed registration email",
+      "input": "qa-invalid",
+      "expected": {
+        "valid": false
+      },
+      "actual": {
+        "executionError": "page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5178/register\", waiting until \"load\"\u001b[22m\n"
+      },
+      "status": "Not Run"
+    },
+    {
+      "id": "EP-EMAIL-03",
+      "description": "Syntactically valid registration email",
+      "input": "qa@example.test",
+      "expected": {
+        "valid": true
+      },
+      "actual": {
+        "executionError": "page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5178/register\", waiting until \"load\"\u001b[22m\n"
+      },
+      "status": "Not Run"
+    },
+    {
+      "id": "EP-EMAIL-04",
+      "description": "Single-label domain accepted by native email input",
+      "input": "qa@local",
+      "expected": {
+        "valid": true
+      },
+      "actual": {
+        "executionError": "page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5178/register\", waiting until \"load\"\u001b[22m\n"
+      },
+      "status": "Not Run"
+    },
+    {
+      "id": "EP-TITLE-01",
+      "description": "Nonempty course title",
+      "input": "QA Course",
+      "expected": {
+        "valid": true
+      },
+      "actual": {
+        "executionError": "page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5178/admin/courses\", waiting until \"load\"\u001b[22m\n"
+      },
+      "status": "Not Run"
+    },
+    {
+      "id": "EP-TITLE-02",
+      "description": "Empty required course title",
+      "input": "",
+      "expected": {
+        "valid": false
+      },
+      "actual": {
+        "executionError": "page.goto: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:5178/admin/courses\", waiting until \"load\"\u001b[22m\n"
+      },
+      "status": "Not Run"
+    },
+    {
+      "id": "EP-TITLE-03",
+      "description": "Whitespace course title characterization",
+      "input": "   ",
+      "steps": "Open /admin/courses; fill input[type=text]; read browser constraint validity",
+      "expected": {
+        "valid": true
+      },
+      "actual": {
+        "value": "   ",
+        "valid": true,
+        "valueMissing": false,
+        "typeMismatch": false,
+        "type": "text",
+        "required": true,
+        "minLength": null,
+        "maxLength": null,
+        "min": null,
+        "max": null
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-URL-01",
+      "description": "Empty required video URL",
+      "input": "",
+      "steps": "Open /admin/videos; fill input[type=url]; read browser constraint validity",
+      "expected": {
+        "valid": false
+      },
+      "actual": {
+        "value": "",
+        "valid": false,
+        "valueMissing": true,
+        "typeMismatch": false,
+        "type": "url",
+        "required": true,
+        "minLength": null,
+        "maxLength": null,
+        "min": null,
+        "max": null
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-URL-02",
+      "description": "Malformed video URL",
+      "input": "not-a-url",
+      "steps": "Open /admin/videos; fill input[type=url]; read browser constraint validity",
+      "expected": {
+        "valid": false
+      },
+      "actual": {
+        "value": "not-a-url",
+        "valid": false,
+        "valueMissing": false,
+        "typeMismatch": true,
+        "type": "url",
+        "required": true,
+        "minLength": null,
+        "maxLength": null,
+        "min": null,
+        "max": null
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-URL-03",
+      "description": "Generic HTTPS URL characterization",
+      "input": "https://example.test/lesson",
+      "steps": "Open /admin/videos; fill input[type=url]; read browser constraint validity",
+      "expected": {
+        "valid": true
+      },
+      "actual": {
+        "value": "https://example.test/lesson",
+        "valid": true,
+        "valueMissing": false,
+        "typeMismatch": false,
+        "type": "url",
+        "required": true,
+        "minLength": null,
+        "maxLength": null,
+        "min": null,
+        "max": null
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-URL-04",
+      "description": "YouTube-shaped absolute URL",
+      "input": "https://youtu.be/abcdefghijk",
+      "steps": "Open /admin/videos; fill input[type=url]; read browser constraint validity",
+      "expected": {
+        "valid": true
+      },
+      "actual": {
+        "value": "https://youtu.be/abcdefghijk",
+        "valid": true,
+        "valueMissing": false,
+        "typeMismatch": false,
+        "type": "url",
+        "required": true,
+        "minLength": null,
+        "maxLength": null,
+        "min": null,
+        "max": null
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "BVA-TITLE-01",
+      "description": "Minimum minus one: zero characters",
+      "input": "",
+      "steps": "Open /admin/courses; fill input[type=text]; read browser constraint validity",
+      "expected": {
+        "valid": false
+      },
+      "actual": {
+        "value": "",
+        "valid": false,
+        "valueMissing": true,
+        "typeMismatch": false,
+        "type": "text",
+        "required": true,
+        "minLength": null,
+        "maxLength": null,
+        "min": null,
+        "max": null
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "BVA-TITLE-02",
+      "description": "Minimum: one character",
+      "input": "A",
+      "steps": "Open /admin/courses; fill input[type=text]; read browser constraint validity",
+      "expected": {
+        "valid": true
+      },
+      "actual": {
+        "value": "A",
+        "valid": true,
+        "valueMissing": false,
+        "typeMismatch": false,
+        "type": "text",
+        "required": true,
+        "minLength": null,
+        "maxLength": null,
+        "min": null,
+        "max": null
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "BVA-TITLE-03",
+      "description": "Minimum plus one: two characters",
+      "input": "AB",
+      "steps": "Open /admin/courses; fill input[type=text]; read browser constraint validity",
+      "expected": {
+        "valid": true
+      },
+      "actual": {
+        "value": "AB",
+        "valid": true,
+        "valueMissing": false,
+        "typeMismatch": false,
+        "type": "text",
+        "required": true,
+        "minLength": null,
+        "maxLength": null,
+        "min": null,
+        "max": null
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "BVA-VIDEO-01",
+      "description": "Actual WatchPage URL rendering",
+      "input": "https://youtu.be/abcdefghij",
+      "steps": "Open watch fixture with URL supplied by local API stub; inspect iframe element or invalid-URL message",
+      "expected": {
+        "iframePresent": false,
+        "invalidMessage": true
+      },
+      "actual": {
+        "iframePresent": false,
+        "src": null,
+        "invalidMessage": true
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "BVA-VIDEO-02",
+      "description": "Actual WatchPage URL rendering",
+      "input": "https://youtu.be/abcdefghijk",
+      "steps": "Open watch fixture with URL supplied by local API stub; inspect iframe element or invalid-URL message",
+      "expected": {
+        "iframePresent": true,
+        "invalidMessage": false
+      },
+      "actual": {
+        "iframePresent": true,
+        "src": "https://www.youtube.com/embed/abcdefghijk?rel=0&modestbranding=1&fs=0",
+        "invalidMessage": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "BVA-VIDEO-03",
+      "description": "Actual WatchPage URL rendering",
+      "input": "https://youtu.be/abcdefghijkl",
+      "steps": "Open watch fixture with URL supplied by local API stub; inspect iframe element or invalid-URL message",
+      "expected": {
+        "iframePresent": false,
+        "invalidMessage": true
+      },
+      "actual": {
+        "iframePresent": false,
+        "src": null,
+        "invalidMessage": true
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-URL-05",
+      "description": "Actual WatchPage URL rendering",
+      "input": "https://example.test/watch?v=abcdefghijk",
+      "steps": "Open watch fixture with URL supplied by local API stub; inspect iframe element or invalid-URL message",
+      "expected": {
+        "iframePresent": true,
+        "invalidMessage": false
+      },
+      "actual": {
+        "iframePresent": true,
+        "src": "https://www.youtube.com/embed/abcdefghijk?rel=0&modestbranding=1&fs=0",
+        "invalidMessage": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-SUBMIT-01",
+      "description": "Browser form submit gate",
+      "input": "qa-invalid",
+      "steps": "Fill actual Register form with synthetic values; click Create Account; inspect native email validity and visible stub response",
+      "expected": {
+        "stubResponseVisible": false
+      },
+      "actual": {
+        "stubResponseVisible": false,
+        "emailValid": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-SUBMIT-02",
+      "description": "Browser form submit gate",
+      "input": "qa@example.test",
+      "steps": "Fill actual Register form with synthetic values; click Create Account; inspect native email validity and visible stub response",
+      "expected": {
+        "stubResponseVisible": true
+      },
+      "actual": {
+        "stubResponseVisible": true,
+        "emailValid": true
+      },
+      "status": "Pass"
+    }
+  ]
+}

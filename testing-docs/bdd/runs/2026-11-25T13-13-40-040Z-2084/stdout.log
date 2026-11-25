@@ -1,0 +1,31 @@
+...........F-.....F-......................................................................................................................................................................................................................................................
+
+Failed scenarios:
+  1) An administrator can create a course # tests\bdd\features\admin-course-management.feature:17
+       Then the response status should be 200 # tests\bdd\steps\tutorial.steps.cjs:31
+           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+           
+           500 !== 200
+           
+               + expected - actual
+           
+               -500
+               +200
+           
+               at TutorialWorld.<anonymous> (D:\projects\tutorial-platform\backend\tests\bdd\steps\tutorial.steps.cjs:31:72)
+  2) An administrator can edit a course # tests\bdd\features\admin-course-management.feature:24
+       Then the response status should be 200 # tests\bdd\steps\tutorial.steps.cjs:31
+           AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+           
+           500 !== 200
+           
+               + expected - actual
+           
+               -500
+               +200
+           
+               at TutorialWorld.<anonymous> (D:\projects\tutorial-platform\backend\tests\bdd\steps\tutorial.steps.cjs:31:72)
+
+30 scenarios (28 passed, 2 failed)
+266 steps (262 passed, 2 skipped, 2 failed)
+0m 0.281s (0m 0.228s executing your code)

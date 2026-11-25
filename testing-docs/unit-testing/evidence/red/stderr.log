@@ -1,0 +1,47 @@
+FAIL tests/unit/authenticate-null-user.test.cjs
+  ● TDD-AUTH-01 missing identity data null returns 401
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: 401
+    Received: 500
+
+    Number of calls: 1
+
+      23 | function denied(ctx, status, error) {
+      24 |   expect(ctx.res.status).toHaveBeenCalledTimes(1);
+    > 25 |   expect(ctx.res.status).toHaveBeenCalledWith(status);
+         |                          ^
+      26 |   expect(ctx.res.json).toHaveBeenCalledTimes(1);
+      27 |   expect(ctx.res.json).toHaveBeenCalledWith({ error });
+      28 |   expect(ctx.next).not.toHaveBeenCalled();
+
+      at denied (tests/helpers/fixtures.cjs:25:26)
+      at tests/unit/authenticate-null-user.test.cjs:11:3
+
+  ● TDD-AUTH-01 missing identity data undefined returns 401
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: 401
+    Received: 500
+
+    Number of calls: 1
+
+      23 | function denied(ctx, status, error) {
+      24 |   expect(ctx.res.status).toHaveBeenCalledTimes(1);
+    > 25 |   expect(ctx.res.status).toHaveBeenCalledWith(status);
+         |                          ^
+      26 |   expect(ctx.res.json).toHaveBeenCalledTimes(1);
+      27 |   expect(ctx.res.json).toHaveBeenCalledWith({ error });
+      28 |   expect(ctx.next).not.toHaveBeenCalled();
+
+      at denied (tests/helpers/fixtures.cjs:25:26)
+      at tests/unit/authenticate-null-user.test.cjs:11:3
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 total
+Snapshots:   0 total
+Time:        0.501 s
+Ran all test suites within paths "tests/unit/authenticate-null-user.test.cjs".
+Test results written to: ..\testing-docs\unit-testing\evidence\red\jest-results.json

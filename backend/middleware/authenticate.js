@@ -11,8 +11,9 @@ const authenticate = async (req, res, next) => {
     
     // Verify token with Supabase
     const { data, error } = await supabase.auth.getUser(token);
-    
-    if (error || !data.user) {
+    const verifiedUser = data?.user;
+
+    if (error || !verifiedUser) {
       return res.status(401).json({ error: 'Unauthorized: Invalid token' });
     }
 
@@ -20,7 +21,7 @@ const authenticate = async (req, res, next) => {
     const { data: profile, error: profileError } = await supabase
       .from('profiles')
       .select('*')
-      .eq('id', data.user.id)
+      .eq('id', verifiedUser.id)
       .single();
 
     if (profileError || !profile) {

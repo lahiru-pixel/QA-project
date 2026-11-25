@@ -1,0 +1,1618 @@
+[
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "An administrator can view the unpublished course catalogue",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:10",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "expectedError": null,
+    "actualBody": [
+      {
+        "id": "00000000-0000-4000-8000-000000000002",
+        "title": "QA existing course",
+        "description": "Synthetic fixture",
+        "is_published": false,
+        "created_at": "2026-01-01T00:00:00.000Z"
+      }
+    ],
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/admin/courses",
+          "body": null,
+          "response": {
+            "status": 200,
+            "body": [
+              {
+                "id": "00000000-0000-4000-8000-000000000002",
+                "title": "QA existing course",
+                "description": "Synthetic fixture",
+                "is_published": false,
+                "created_at": "2026-01-01T00:00:00.000Z"
+              }
+            ]
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "courses"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "An administrator can create a course",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:17",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "expectedError": null,
+    "actualBody": {
+      "id": "00000000-0000-4000-8000-000000000004",
+      "created_at": "2026-01-02T00:00:00.000Z",
+      "title": "QA created course",
+      "description": "Fixture only",
+      "is_published": false
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "POST",
+          "path": "/api/admin/courses",
+          "body": {
+            "title": "QA created course",
+            "description": "Fixture only",
+            "is_published": false
+          },
+          "response": {
+            "status": 200,
+            "body": {
+              "id": "00000000-0000-4000-8000-000000000004",
+              "created_at": "2026-01-02T00:00:00.000Z",
+              "title": "QA created course",
+              "description": "Fixture only",
+              "is_published": false
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        },
+        {
+          "id": "00000000-0000-4000-8000-000000000004",
+          "created_at": "2026-01-02T00:00:00.000Z",
+          "title": "QA created course",
+          "description": "Fixture only",
+          "is_published": false
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "courses"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "An administrator can edit a course",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:24",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "expectedError": null,
+    "actualBody": {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "title": "QA updated course",
+      "description": "Synthetic fixture",
+      "is_published": false,
+      "created_at": "2026-01-01T00:00:00.000Z"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "PUT",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": {
+            "title": "QA updated course"
+          },
+          "response": {
+            "status": 200,
+            "body": {
+              "id": "00000000-0000-4000-8000-000000000002",
+              "title": "QA updated course",
+              "description": "Synthetic fixture",
+              "is_published": false,
+              "created_at": "2026-01-01T00:00:00.000Z"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA updated course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "courses"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "An administrator can delete a course",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:31",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "expectedError": null,
+    "actualBody": {
+      "success": true
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "DELETE",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": null,
+          "response": {
+            "status": 200,
+            "body": {
+              "success": true
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "courses"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A guest cannot view courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:48",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Missing or invalid authorization header",
+    "actualBody": {
+      "error": "Missing or invalid authorization header"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/admin/courses",
+          "body": null,
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Missing or invalid authorization header"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A guest cannot create courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:49",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Missing or invalid authorization header",
+    "actualBody": {
+      "error": "Missing or invalid authorization header"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "POST",
+          "path": "/api/admin/courses",
+          "body": {
+            "title": "QA created course",
+            "description": "Fixture only",
+            "is_published": false
+          },
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Missing or invalid authorization header"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A guest cannot edit courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:50",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Missing or invalid authorization header",
+    "actualBody": {
+      "error": "Missing or invalid authorization header"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "PUT",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": {
+            "title": "QA updated course"
+          },
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Missing or invalid authorization header"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A guest cannot delete courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:51",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Missing or invalid authorization header",
+    "actualBody": {
+      "error": "Missing or invalid authorization header"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "DELETE",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": null,
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Missing or invalid authorization header"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A student cannot view courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:56",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: Admin access required",
+    "actualBody": {
+      "error": "Forbidden: Admin access required"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/admin/courses",
+          "body": null,
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: Admin access required"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A student cannot create courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:57",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: Admin access required",
+    "actualBody": {
+      "error": "Forbidden: Admin access required"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "POST",
+          "path": "/api/admin/courses",
+          "body": {
+            "title": "QA created course",
+            "description": "Fixture only",
+            "is_published": false
+          },
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: Admin access required"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A student cannot edit courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:58",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: Admin access required",
+    "actualBody": {
+      "error": "Forbidden: Admin access required"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "PUT",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": {
+            "title": "QA updated course"
+          },
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: Admin access required"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A student cannot delete courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:59",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: Admin access required",
+    "actualBody": {
+      "error": "Forbidden: Admin access required"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "DELETE",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": null,
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: Admin access required"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A invalid identity cannot view courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:64",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Unauthorized: Invalid token",
+    "actualBody": {
+      "error": "Unauthorized: Invalid token"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/admin/courses",
+          "body": null,
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Unauthorized: Invalid token"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A invalid identity cannot create courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:65",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Unauthorized: Invalid token",
+    "actualBody": {
+      "error": "Unauthorized: Invalid token"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "POST",
+          "path": "/api/admin/courses",
+          "body": {
+            "title": "QA created course",
+            "description": "Fixture only",
+            "is_published": false
+          },
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Unauthorized: Invalid token"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A invalid identity cannot edit courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:66",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Unauthorized: Invalid token",
+    "actualBody": {
+      "error": "Unauthorized: Invalid token"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "PUT",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": {
+            "title": "QA updated course"
+          },
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Unauthorized: Invalid token"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A invalid identity cannot delete courses",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:67",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Unauthorized: Invalid token",
+    "actualBody": {
+      "error": "Unauthorized: Invalid token"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "DELETE",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": null,
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Unauthorized: Invalid token"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A repository failure does not report a successful view",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:80",
+    "expectedStatus": 500,
+    "actualStatus": 500,
+    "expectedError": "Failed to fetch courses",
+    "actualBody": {
+      "error": "Failed to fetch courses"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/admin/courses",
+          "body": null,
+          "response": {
+            "status": 500,
+            "body": {
+              "error": "Failed to fetch courses"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "courses"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A repository failure does not report a successful create",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:81",
+    "expectedStatus": 500,
+    "actualStatus": 500,
+    "expectedError": "Failed to create course",
+    "actualBody": {
+      "error": "Failed to create course"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "POST",
+          "path": "/api/admin/courses",
+          "body": {
+            "title": "QA created course",
+            "description": "Fixture only",
+            "is_published": false
+          },
+          "response": {
+            "status": 500,
+            "body": {
+              "error": "Failed to create course"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "courses"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A repository failure does not report a successful edit",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:82",
+    "expectedStatus": 500,
+    "actualStatus": 500,
+    "expectedError": "Failed to update course",
+    "actualBody": {
+      "error": "Failed to update course"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "PUT",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": {
+            "title": "QA updated course"
+          },
+          "response": {
+            "status": 500,
+            "body": {
+              "error": "Failed to update course"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "courses"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Administrator-only course management",
+    "scenario": "A repository failure does not report a successful delete",
+    "source": "tests\\bdd\\features\\admin-course-management.feature:83",
+    "expectedStatus": 500,
+    "actualStatus": 500,
+    "expectedError": "Failed to delete course",
+    "actualBody": {
+      "error": "Failed to delete course"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "DELETE",
+          "path": "/api/admin/courses/00000000-0000-4000-8000-000000000002",
+          "body": null,
+          "response": {
+            "status": 500,
+            "body": {
+              "error": "Failed to delete course"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "courses"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "A guest cannot obtain a video link",
+    "source": "tests\\bdd\\features\\student-video-access.feature:10",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Missing or invalid authorization header",
+    "actualBody": {
+      "error": "Missing or invalid authorization header"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Missing or invalid authorization header"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "An invalid identity cannot obtain a video link",
+    "source": "tests\\bdd\\features\\student-video-access.feature:18",
+    "expectedStatus": 401,
+    "actualStatus": 401,
+    "expectedError": "Unauthorized: Invalid token",
+    "actualBody": {
+      "error": "Unauthorized: Invalid token"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 401,
+            "body": {
+              "error": "Unauthorized: Invalid token"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": []
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "A paid enrolled student can access the video",
+    "source": "tests\\bdd\\features\\student-video-access.feature:26",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "expectedError": null,
+    "actualBody": {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "title": "QA synthetic lesson",
+      "youtube_url": "https://youtu.be/abcdefghijk",
+      "description": "Fixture only"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 200,
+            "body": {
+              "id": "00000000-0000-4000-8000-000000000001",
+              "title": "QA synthetic lesson",
+              "youtube_url": "https://youtu.be/abcdefghijk",
+              "description": "Fixture only"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "videos"
+        },
+        {
+          "table": "enrollments"
+        },
+        {
+          "table": "videos"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "An unpaid student is denied even when enrollment is present",
+    "source": "tests\\bdd\\features\\student-video-access.feature:46",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: User has not paid",
+    "actualBody": {
+      "error": "Forbidden: User has not paid"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: User has not paid"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "An unpaid student is denied even when enrollment is absent",
+    "source": "tests\\bdd\\features\\student-video-access.feature:51",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: User has not paid",
+    "actualBody": {
+      "error": "Forbidden: User has not paid"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: User has not paid"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "Payment alone does not grant course access",
+    "source": "tests\\bdd\\features\\student-video-access.feature:54",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: Not enrolled in this course",
+    "actualBody": {
+      "error": "Forbidden: Not enrolled in this course"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: Not enrolled in this course"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "videos"
+        },
+        {
+          "table": "enrollments"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "An enrollment for another course does not grant this access",
+    "source": "tests\\bdd\\features\\student-video-access.feature:75",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: Not enrolled in this course",
+    "actualBody": {
+      "error": "Forbidden: Not enrolled in this course"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: Not enrolled in this course"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "videos"
+        },
+        {
+          "table": "enrollments"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "An enrollment for another student does not grant this access",
+    "source": "tests\\bdd\\features\\student-video-access.feature:80",
+    "expectedStatus": 403,
+    "actualStatus": 403,
+    "expectedError": "Forbidden: Not enrolled in this course",
+    "actualBody": {
+      "error": "Forbidden: Not enrolled in this course"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 403,
+            "body": {
+              "error": "Forbidden: Not enrolled in this course"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "videos"
+        },
+        {
+          "table": "enrollments"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "An administrator may preview without payment or enrollment",
+    "source": "tests\\bdd\\features\\student-video-access.feature:83",
+    "expectedStatus": 200,
+    "actualStatus": 200,
+    "expectedError": null,
+    "actualBody": {
+      "id": "00000000-0000-4000-8000-000000000001",
+      "title": "QA synthetic lesson",
+      "youtube_url": "https://youtu.be/abcdefghijk",
+      "description": "Fixture only"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+          "body": null,
+          "response": {
+            "status": 200,
+            "body": {
+              "id": "00000000-0000-4000-8000-000000000001",
+              "title": "QA synthetic lesson",
+              "youtube_url": "https://youtu.be/abcdefghijk",
+              "description": "Fixture only"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "videos"
+        }
+      ]
+    }
+  },
+  {
+    "feature": "Student access to a course video",
+    "scenario": "A paid student receives a clear error for a missing video",
+    "source": "tests\\bdd\\features\\student-video-access.feature:92",
+    "expectedStatus": 404,
+    "actualStatus": 404,
+    "expectedError": "Video not found",
+    "actualBody": {
+      "error": "Video not found"
+    },
+    "status": "Pass",
+    "observation": {
+      "scope": "Real Express routers and middleware; synthetic in-memory Supabase",
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/videos/00000000-0000-4000-8000-000000000099/watch",
+          "body": null,
+          "response": {
+            "status": 404,
+            "body": {
+              "error": "Video not found"
+            }
+          }
+        }
+      ],
+      "coursesBefore": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "coursesAfter": [
+        {
+          "id": "00000000-0000-4000-8000-000000000002",
+          "title": "QA existing course",
+          "description": "Synthetic fixture",
+          "is_published": false,
+          "created_at": "2026-01-01T00:00:00.000Z"
+        }
+      ],
+      "repositoryQueries": [
+        {
+          "table": "profiles"
+        },
+        {
+          "table": "videos"
+        }
+      ]
+    }
+  }
+]

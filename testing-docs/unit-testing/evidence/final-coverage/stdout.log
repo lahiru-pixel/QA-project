@@ -1,0 +1,18 @@
+
+> backend@1.0.0 test:coverage
+> jest --runInBand --coverage --json --outputFile=D:\projects\tutorial-platform\testing-docs\unit-testing\evidence\final-coverage\jest-results.json
+
+------------------|---------|----------|---------|---------|-------------------
+File              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------|---------|----------|---------|---------|-------------------
+All files         |   41.86 |    56.04 |   34.78 |   43.14 |                   
+ middleware       |     100 |      100 |     100 |     100 |                   
+  authenticate.js |     100 |      100 |     100 |     100 |                   
+  isAdmin.js      |     100 |      100 |     100 |     100 |                   
+  isEnrolled.js   |     100 |      100 |     100 |     100 |                   
+ routes           |   24.24 |       20 |      25 |    23.8 |                   
+  admin.js        |       0 |        0 |       0 |       0 | 1-202             
+  courses.js      |     100 |      100 |     100 |     100 |                   
+  students.js     |     100 |      100 |     100 |     100 |                   
+  videos.js       |       0 |        0 |       0 |       0 | 1-28              
+------------------|---------|----------|---------|---------|-------------------

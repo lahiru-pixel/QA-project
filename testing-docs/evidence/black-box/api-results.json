@@ -1,0 +1,391 @@
+{
+  "executedAt": "2026-11-25T12:04:24.316Z",
+  "node": "v24.14.1",
+  "scope": "Real Express HTTP route and middleware with in-memory Supabase; not real auth, database, or RLS",
+  "sourceHashes": {
+    "backend/routes/videos.js": "f6e797abd23a65c32e6c1a6a3d8fcbe2360a45182a41394b2736af4c3529e34f",
+    "backend/middleware/authenticate.js": "2dec2af3abf78cdde1733d4d1e6b40f2c13c7992d1efbdf95578ea0b302d44fb",
+    "backend/middleware/isEnrolled.js": "3fe66a607a37a7a86d2ed8d33bfe2d632eb8331a9a9aa38141d41c0a91a68f98"
+  },
+  "results": [
+    {
+      "id": "DT-01",
+      "conditions": {
+        "authenticated": false,
+        "role": null,
+        "paid": null,
+        "enrolled": null,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 401,
+        "error": "Missing or invalid authorization header",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 401,
+        "body": {
+          "error": "Missing or invalid authorization header"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "DT-02",
+      "conditions": {
+        "authenticated": true,
+        "role": "student",
+        "paid": false,
+        "enrolled": false,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 403,
+        "error": "Forbidden: User has not paid",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 403,
+        "body": {
+          "error": "Forbidden: User has not paid"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "DT-03",
+      "conditions": {
+        "authenticated": true,
+        "role": "student",
+        "paid": false,
+        "enrolled": true,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 403,
+        "error": "Forbidden: User has not paid",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 403,
+        "body": {
+          "error": "Forbidden: User has not paid"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "DT-04",
+      "conditions": {
+        "authenticated": true,
+        "role": "student",
+        "paid": true,
+        "enrolled": false,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 403,
+        "error": "Forbidden: Not enrolled in this course",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 403,
+        "body": {
+          "error": "Forbidden: Not enrolled in this course"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "DT-05",
+      "conditions": {
+        "authenticated": true,
+        "role": "student",
+        "paid": true,
+        "enrolled": true,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 200,
+        "error": null,
+        "urlPresent": true
+      },
+      "actual": {
+        "status": 200,
+        "body": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "title": "QA synthetic lesson",
+          "youtube_url": "https://youtu.be/abcdefghijk",
+          "description": "Fixture only"
+        },
+        "urlPresent": true
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "DT-06",
+      "conditions": {
+        "authenticated": true,
+        "role": "admin",
+        "paid": false,
+        "enrolled": false,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 200,
+        "error": null,
+        "urlPresent": true
+      },
+      "actual": {
+        "status": 200,
+        "body": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "title": "QA synthetic lesson",
+          "youtube_url": "https://youtu.be/abcdefghijk",
+          "description": "Fixture only"
+        },
+        "urlPresent": true
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "DT-07",
+      "conditions": {
+        "authenticated": true,
+        "role": "admin",
+        "paid": false,
+        "enrolled": true,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 200,
+        "error": null,
+        "urlPresent": true
+      },
+      "actual": {
+        "status": 200,
+        "body": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "title": "QA synthetic lesson",
+          "youtube_url": "https://youtu.be/abcdefghijk",
+          "description": "Fixture only"
+        },
+        "urlPresent": true
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "DT-08",
+      "conditions": {
+        "authenticated": true,
+        "role": "admin",
+        "paid": true,
+        "enrolled": false,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 200,
+        "error": null,
+        "urlPresent": true
+      },
+      "actual": {
+        "status": 200,
+        "body": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "title": "QA synthetic lesson",
+          "youtube_url": "https://youtu.be/abcdefghijk",
+          "description": "Fixture only"
+        },
+        "urlPresent": true
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "DT-09",
+      "conditions": {
+        "authenticated": true,
+        "role": "admin",
+        "paid": true,
+        "enrolled": true,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 200,
+        "error": null,
+        "urlPresent": true
+      },
+      "actual": {
+        "status": 200,
+        "body": {
+          "id": "00000000-0000-4000-8000-000000000001",
+          "title": "QA synthetic lesson",
+          "youtube_url": "https://youtu.be/abcdefghijk",
+          "description": "Fixture only"
+        },
+        "urlPresent": true
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-AUTH-01",
+      "conditions": {
+        "authenticated": false,
+        "role": "student",
+        "paid": true,
+        "enrolled": true,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 401,
+        "error": "Missing or invalid authorization header",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 401,
+        "body": {
+          "error": "Missing or invalid authorization header"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-AUTH-02",
+      "conditions": {
+        "authenticated": false,
+        "role": "student",
+        "paid": true,
+        "enrolled": true,
+        "missingProfile": false,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 401,
+        "error": "Unauthorized: Invalid token",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 401,
+        "body": {
+          "error": "Unauthorized: Invalid token"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EP-AUTH-03",
+      "conditions": {
+        "authenticated": true,
+        "role": "student",
+        "paid": true,
+        "enrolled": true,
+        "missingProfile": true,
+        "missingVideo": false
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000001/watch",
+      "expected": {
+        "status": 401,
+        "error": "Profile not found",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 401,
+        "body": {
+          "error": "Profile not found"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EDGE-01",
+      "conditions": {
+        "authenticated": true,
+        "role": "student",
+        "paid": true,
+        "enrolled": true,
+        "missingProfile": false,
+        "missingVideo": true
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000099/watch",
+      "expected": {
+        "status": 404,
+        "error": "Video not found",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 404,
+        "body": {
+          "error": "Video not found"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    },
+    {
+      "id": "EDGE-02",
+      "conditions": {
+        "authenticated": true,
+        "role": "student",
+        "paid": false,
+        "enrolled": true,
+        "missingProfile": false,
+        "missingVideo": true
+      },
+      "method": "GET",
+      "endpoint": "/api/videos/00000000-0000-4000-8000-000000000099/watch",
+      "expected": {
+        "status": 403,
+        "error": "Forbidden: User has not paid",
+        "urlPresent": false
+      },
+      "actual": {
+        "status": 403,
+        "body": {
+          "error": "Forbidden: User has not paid"
+        },
+        "urlPresent": false
+      },
+      "status": "Pass"
+    }
+  ]
+}

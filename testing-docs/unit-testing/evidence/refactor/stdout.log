@@ -1,0 +1,4 @@
+
+> backend@1.0.0 test
+> jest --runInBand --json --outputFile=D:\projects\tutorial-platform\testing-docs\unit-testing\evidence\refactor\jest-results.json
+
